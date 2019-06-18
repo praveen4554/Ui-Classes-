@@ -6,8 +6,125 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <script></script>
         <link rel="stylesheet"></link>
+        <style>
+            /*p {
+                border: 1px solid;
+                display: inline-block;
+                width:30%;
+            }
+            #test {
+                display: inline;
+            }
+            a:focus{
+                color:red;
+            }
+            a:hover{
+                color:green;
+            }
+            a:active{
+                color:yellow;
+            }
+            a:visited{
+                color: gray;
+            }
+            p::after{
+                content: 'hello'
+            }
+            p::before{
+                content: 'hi'
+            }
+            p::first-letter{
+                color: red;
+                -webkit-column-rule-color: red;
+                -moz-column-rule-color: red;
+            }
+            .tooltip .tooltipText{
+                visibility: hidden;
+                position: fixed;
+                top:0px;
+            }
+            .tooltip:hover .tooltipText {
+                visibility: visible;
+            }*/
+            /*div p {
+                color: red;
+            }*/
+            /*div > p {
+                color: red;
+            }*/
+            /*div + p {
+                color: red;
+            }*/
+
+            div ~ p {
+                color: red;
+            }
+            /*@media only screen and (min-width: 768px) {
+                p{
+                    color: red;
+                }
+            }
+            @media only screen and (min-width: 1024px) {
+                p{
+                    color: green;
+                }
+            }*/
+        </style>
         </head>
     <body>
+         <!--<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+           <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>-->
+           <!--<p class="tooltip">Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.
+               <span class="tooltipText">Hello sirisha</span>
+           </p>
+           <div>
+               siri
+           <p id="test">
+               sha
+           </p>
+           </div>
+           <div id="test">
+               Hello
+           </div>
+           <div id="test">
+               Hello
+           </div>
+  <a href="./" > test</a>-->
+ 
+      <p>
+          sirisha before
+      </p> <div>
+      <p>
+           sirisha child 
+      </p>
+      <section>
+
+      <p>
+           sirisha grand child
+      </p>
+      </section>
+      <p>
+           sirisha child
+      </p>
+      </div>
+      <p>
+           sirisha after
+      </p>
+      <p>
+          sirisha after Hello
+      </p>
+<!--p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+<div class="sticky">I am sticky!</div>
+
+<div style="padding-bottom:2000px">
+  <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+  <p>Scroll back up to remove the stickyness.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+</div>-->
         <!--
             2 kind of elements
             1. block level elements div,p,h1 - h6
@@ -26,6 +143,17 @@
             improve seo
 
             rwd - responsive web design 
+            p{
+                width: 10px;
+                height:10px;
+                margin:10px;
+                padding:10px;
+                border:1px;
+            }
+            width: - width+border-left+border-right+padding-left+padding-right+margin-left+margin-right
+            height: height+ border-top+....
+            siri - content - padding - border - margin 
+            position: - fixed, static,relative,absolute,sticky
         -->
         <!--<h1>
             Siri<hr><br/>
@@ -67,9 +195,9 @@
           2. order list 
           3. data definiton list 
         </span>-->
-        <form>
+        <!--<form>-->
             <!--<label>Frist Name:</label>-->
-            <input type="text" placeholder="enter your first name">
+            <!--<input type="text" placeholder="enter your first name">
             <input type="number">
             <input type="password">
             <input type="file">
@@ -83,9 +211,9 @@
                <option>JS</option>
                <option>Angular</option>
                <option>CSS</option>
-           </select>
+           </select>-->
            <!--<input type="date">-->
-           <input type="range" min="1" max="10" step="1">
+           <!--<input type="range" min="1" max="10" step="1">
            <input type="search">
            <input type="time">
            <input type="button" name="basic" value="basic">
@@ -93,7 +221,7 @@
 
            </textarea>
             <input type="submit">
-        </form>
+        </form>-->
         <!--<table border="1px">
             <thead>
             <tr>
